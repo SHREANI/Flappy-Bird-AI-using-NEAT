@@ -98,21 +98,31 @@ Birds are penalized for collisions (-1 fitness)
 Evolution: After each generation, the best-performing neural networks are selected to create the next generation through mutation and crossover.
 
 NEAT Configuration
-The NEAT algorithm is configured in config-feedforward.txt. Key parameters:
+The NEAT algorithm is configured in config-feedforward.txt. 
+
+Key parameters:
 
 Population Size: 100 birds per generation
+
 Fitness Threshold: Training stops when a bird scores > 50
+
 Generations: Maximum 50 generations
+
 Neural Network: 3 inputs, 1 output, hidden nodes evolve
 
 Customization
+
 You can modify various parameters in the code:
 
 WIN_WIDTH, WIN_HEIGHT: Window dimensions
+
 Pipe.GAP: Distance between top and bottom pipes
+
 Pipe.VEL: Speed of pipes
+
 Bird.jump(): Jump velocity
 
 Results
+
 The AI typically learns to play successfully within 10-20 generations, achieving scores of 50+ consistently.
 
